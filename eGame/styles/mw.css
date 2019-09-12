@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding-bottom:60px;
+}
+footer {
+    background-color: white;
+    text-align: center;
+    border-top: 1px solid black;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;
+}
+
+footer  > div{
+
+}
+.logo {
+    float:left;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background:white;
+    z-index: 1;
+    
+    border-bottom: 1px solid black;
+}
+header::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+nav {
+    position: relative;
+    
+}
+nav form {
+    float: left;
+  padding: 20px
+}
+
+nav ul {
+    list-style-type: none;
+    
+    float:right;
+}
+nav ul li {
+    display: inline-block;
+   padding: 20px 20px 15px 20px;
+   border-bottom: 0px solid red;
+   transition: border-bottom 250ms; 
+}
+nav ul li:hover {
+    border-bottom: 2px solid red;
+}
+nav ul li a {
+    text-decoration: none;
+    color:black;
+    text-transform: capitalize;
+}
+.product-container{
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+    
+    
+}
+
+.product-container > div {
+    padding: 10px;
+    margin: 10px;
+}
+.product-container > .product-det {
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+.product-container > .product-det > span {
+ text-align: center;
+    
+}
+.product-container > .product-det > span > a {
+ text-align: center;
+ color: black;
+}
+.product-container > .product-det:hover {
+    background-color: aliceblue;
+    
+}
+.product-container > .product-det > a > .prod-img{
+    width:200px;
+    height: 200px;
+    overflow: hidden;
+    
+}
+.product-specf {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    
+}
+.product-specf > .title {
+    font-size: 40px;
+    text-align: center;
+}
+.product-specf > .price {
+    font-size: 15px;
+    text-align: center;
+}
+.product-specf > .disc {
+    font-size: 20px;
+    text-align: center;
+}
+.product-specf > .status {
+    font-size: 20px;
+    text-align: center;
+}
+.product-specf > form {
+text-align: center;
+}
+.item-img {
+    width:30%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    overflow: hidden;
+}
+.buttons {
+background-color: crimson;
+    color: white;
+    border-radius: 20px;
+    padding: 0px 40px 0px 40px;
+    text-decoration: none;
+    width:15vh;
+    font-size: 1.5vh
+}
+.buttons:hover {
+background-color: brown;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    left:-25%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    
+    
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+
+.dropdown:hover .dropdown-content {
+    
+    display: block;
+}
+.nav-down {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: white;
+  
+}
+.nav-down > .nav-down-link {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    
+}
+.nav-down > .nav-down-link > a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border:1px solid black;
+    
+}
+.nav-down > .nav-down-link > a:hover {
+    text-decoration: none;
+    color: brown;
+    padding: 5px;
+    border:1px solid black;
+    
+}
+.profile {
+    background-color: white;
+    
+    overflow: hidden;
+    
+}
+.profile > .form-holder >form {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 20%;
+    margin: auto;
+}
+
+.profile > .form-holder > form > .title {
+    font-size: 2.5vh;
+    border-bottom: 2px solid black;
+    text-transform: capitalize;
+}
+.profile > .form-holder > form > .paymentdiv {
+    display:flex;
+    flex-direction: row;
+    padding: 0px 5px 0px 0px;
+}
+.OrdersGroup {
+    background-color: white;
+    overflow: hidden;
+    margin: auto;
+    width: 50%;
+}
+
+.OrdersGroup > .orderstable,tr,th{
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+.OrdersGroup > .orderstable,tr>td{
+    padding: 5px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+}
+tr:hover{
+    background-color:cornsilk;
+    
+    
+}

@@ -1,0 +1,29 @@
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+    background-color: dimgrey;
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+    height: 100%;
+}
+.container > form > .register-form{
+background-color: white;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+justify-content: center;
+width:30%;
+border: 1px solid black;
+padding:30px;
+margin: 10% 30% 0px 30%
+
+}
+.container {
+    margin: auto;
+    width: 50%;
+    
+    
+    
+}
+
