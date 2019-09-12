@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="2000.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.converter.Currency_controlpanal">
+   <children>
+      <AnchorPane fx:id="controlpanal" layoutX="447.0" layoutY="344.0" prefHeight="407.0" prefWidth="778.0" style="-fx-background-color: #fff;">
+         <children>
+            <Text fontSmoothingType="LCD" layoutX="91.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Controlpanal" textAlignment="CENTER" wrappingWidth="407.2734375">
+               <font>
+                  <Font name="Arial" size="42.0" />
+               </font>
+               <effect>
+                  <DropShadow height="0.0" radius="2.0" width="10.0" />
+               </effect>
+            </Text>
+            <JFXButton fx:id="add" layoutX="80.0" layoutY="265.0" onAction="#controlmenu" prefHeight="37.0" prefWidth="147.0" style="-fx-background-color: black;" text="Add" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow height="38.79" radius="18.155" width="35.83" />
+               </effect>
+            </JFXButton>
+            <FontAwesomeIconView glyphName="LIST_ALT" layoutX="437.0" layoutY="87.0" size="40" />
+            <JFXTextField fx:id="namebox" focusColor="#e5e5e586" labelFloat="true" layoutX="69.0" layoutY="141.0" maxWidth="283.0" minWidth="283.0" prefHeight="45.0" prefWidth="283.0" promptText="Name of the currency">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="4.0" radius="1.5" width="4.0" />
+               </effect>
+            </JFXTextField>
+            <JFXTextField fx:id="fromratebox" focusColor="#e5e5e586" labelFloat="true" layoutX="69.0" layoutY="200.0" maxWidth="283.0" minWidth="283.0" prefHeight="45.0" prefWidth="283.0" promptText="To USD rate">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="4.0" radius="1.5" width="4.0" />
+               </effect>
+            </JFXTextField>
+            <JFXTextField fx:id="toratebox" focusColor="#e5e5e586" labelFloat="true" layoutX="357.0" layoutY="200.0" maxWidth="283.0" minWidth="214.0" prefHeight="45.0" prefWidth="214.0" promptText="To SAME currency rate">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <effect>
+                  <DropShadow height="4.0" radius="1.5" width="4.0" />
+               </effect>
+            </JFXTextField>
+            <JFXButton fx:id="delete" layoutX="237.0" layoutY="265.0" onAction="#controlmenu" prefHeight="37.0" prefWidth="147.0" style="-fx-background-color: black;" text="delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow height="38.79" radius="18.155" width="35.83" />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="getdata" layoutX="392.0" layoutY="265.0" onAction="#controlmenu" prefHeight="37.0" prefWidth="147.0" style="-fx-background-color: black;" text="getdata" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow height="38.79" radius="18.155" width="35.83" />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="update" layoutX="80.0" layoutY="321.0" onAction="#controlmenu" prefHeight="37.0" prefWidth="147.0" style="-fx-background-color: black;" text="update" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow height="38.79" radius="18.155" width="35.83" />
+               </effect>
+            </JFXButton>
+            <JFXButton fx:id="clearbox" layoutX="237.0" layoutY="321.0" onAction="#controlmenu" prefHeight="37.0" prefWidth="147.0" style="-fx-background-color: black;" text="clearbox" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <DropShadow height="38.79" radius="18.155" width="35.83" />
+               </effect>
+            </JFXButton>
+            <Text layoutX="579.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TSCR :" wrappingWidth="40.000006556510925" />
+            <Text layoutX="579.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TUR :" wrappingWidth="30.13671875" />
+            <Text fx:id="fromrate" layoutX="609.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="177.13671875" />
+            <Text fx:id="torate" layoutX="617.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="177.13671875" />
+            <JFXComboBox fx:id="namelist" layoutX="362.0" layoutY="146.0" prefHeight="37.0" prefWidth="195.0" promptText="Name">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <effect>
+                  <DropShadow height="4.0" radius="1.5" width="4.0" />
+               </effect>
+            </JFXComboBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

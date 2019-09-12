@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="2000.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.converter.Currency_controller">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="707.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currency Conversion" textAlignment="CENTER" wrappingWidth="407.2734375">
+         <font>
+            <Font name="Arial" size="42.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" radius="2.0" width="10.0" />
+         </effect>
+      </Text>
+      <FontAwesomeIconView glyphName="BITCOIN" layoutX="914.0" layoutY="389.0" size="70">
+         <effect>
+            <DropShadow height="4.5" radius="1.75" width="4.5" />
+         </effect>
+      </FontAwesomeIconView>
+      <FontAwesomeIconView glyphName="DOLLAR" layoutX="1115.0" layoutY="256.0" size="50">
+         <effect>
+            <DropShadow height="4.5" radius="1.75" width="4.5" />
+         </effect>
+      </FontAwesomeIconView>
+      <JFXButton layoutX="798.0" layoutY="604.0" onAction="#convert" prefHeight="25.0" prefWidth="268.0" style="-fx-background-color: black;" text="Convert" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <effect>
+            <DropShadow height="38.79" radius="18.155" width="35.83" />
+         </effect>
+      </JFXButton>
+      <JFXComboBox fx:id="cu_from_combobox" layoutX="790.0" layoutY="468.0" prefHeight="25.0" prefWidth="129.0" promptText="From">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow height="4.0" radius="1.5" width="4.0" />
+         </effect>
+      </JFXComboBox>
+      <JFXComboBox fx:id="cu_to_combobox" layoutX="941.0" layoutY="468.0" prefHeight="25.0" prefWidth="129.0" promptText="To">
+         <effect>
+            <DropShadow height="4.0" radius="1.5" width="4.0" />
+         </effect>
+      </JFXComboBox>
+      <JFXTextField fx:id="AmountText" focusColor="#e5e5e586" labelFloat="true" layoutX="790.0" layoutY="527.0" maxWidth="283.0" minWidth="283.0" prefHeight="45.0" prefWidth="283.0" promptText="Quantity">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <effect>
+            <DropShadow height="4.0" radius="1.5" width="4.0" />
+         </effect>
+      </JFXTextField>
+      <Text fx:id="resulttext" layoutX="810.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="242.13671875">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

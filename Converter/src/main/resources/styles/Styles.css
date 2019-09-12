@@ -1,0 +1,18 @@
+.button {
+    -fx-font-weight: bold;
+}
+.AnchorPane{
+    -fx-background-color: #fff;
+    
+    
+    
+}
+.JFXButton{
+    
+    -fx-background-color: black;
+    textFill:"WHITE";
+    -fx-font: System Bold; size:"16.0";
+    -fx-effect: dropshadow;height:"38.79";width:"35.83"
+    
+    
+}

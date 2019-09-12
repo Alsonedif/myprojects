@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="1000.0" prefWidth="2000.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="615.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome" textAlignment="CENTER" wrappingWidth="345.2734375">
+         <font>
+            <Font name="Arial" size="42.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" radius="2.0" width="10.0" />
+         </effect>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="699.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This a project that is made by " textAlignment="CENTER" wrappingWidth="281.2734375">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" radius="2.0" width="10.0" />
+         </effect>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="719.0" layoutY="482.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1-Fahad Alsonedi" wrappingWidth="255.2734375">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" radius="2.0" width="10.0" />
+         </effect>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="720.0" layoutY="509.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2-Rayn Alslom" wrappingWidth="255.2734375">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" radius="2.0" width="10.0" />
+         </effect>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="721.0" layoutY="534.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3-Mohammed Alrshed" wrappingWidth="255.2734375">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" radius="2.0" width="10.0" />
+         </effect>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="721.0" layoutY="558.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4-Abdulatif Aldaege" wrappingWidth="255.2734375">
+         <font>
+            <Font name="Arial" size="19.0" />
+         </font>
+         <effect>
+            <DropShadow height="0.0" radius="2.0" width="10.0" />
+         </effect>
+      </Text>
+      <FontAwesomeIconView glyphName="USERS" layoutX="652.0" layoutY="447.0" size="50">
+         <effect>
+            <DropShadow />
+         </effect>
+      </FontAwesomeIconView>
+      <FontAwesomeIconView glyphName="TROPHY" layoutX="894.0" layoutY="266.0" size="50">
+         <effect>
+            <DropShadow />
+         </effect>
+      </FontAwesomeIconView>
+   </children>
+</AnchorPane>
